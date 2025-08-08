@@ -6,11 +6,11 @@
 <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
 <!-- Replace the content tag with appropriate information -->
 <meta content="VCQA: A Visual Commonsense Benchmark" name="description"/>
-<meta content="VCQA Benchmark" property="og:title">
-<meta content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models" property="og:description">
-<meta content="https://visual-riddles.github.io/" property="og:url"/>
+<meta content="VCQA Benchmark" property="og:title"/>
+<meta content="VCQA: A Visual-Feedback Question Answering Benchmark for Commonsense Reasoning" property="og:description"/>
+<meta content="https://visual-commonsense-qa-benchmark.github.io/" property="og:url">
 <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-<meta content="static/image/your_banner_image.png" property="og:image"/>
+<meta content="static/image/your_banner_image.png" property="og:image">
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="VCQA Benchmark" name="twitter:title"/>
@@ -141,8 +141,6 @@
 </div>
 </div>
 </div>
-
-
 </section>
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -212,12 +210,7 @@
            Abstract
            </h2>
 <h3 class="subtitle is-size-4-tablet has-text-left has-background-info-light pr-4 pl-4 pt-3 pb-3">
-<p>
-             Imagine observing someone scratching their arm; to understand why, additional context would be necessary. However, spotting a mosquito nearby would immediately offer a likely explanation for the person's discomfort, thereby alleviating the need for further information. This example illustrates how subtle visual cues can challenge our cognitive skills and demonstrates the complexity of interpreting visual scenarios.
-             To study these skills, we present Visual Riddles, a benchmark aimed to test vision and language models on visual riddles requiring commonsense and world knowledge.
-             The benchmark comprises 400 visual riddles, each featuring a unique image created by a variety of text-to-image models, question, ground-truth answer, textual hint, and attribution.
-             Human evaluation reveals that existing models lag significantly behind human performance, which is at 82% accuracy, with Gemini-Pro-1.5 leading with 40% accuracy. Our benchmark comes with automatic evaluation tasks to make assessment scalable. These findings underscore the potential of Visual Riddles as a valuable resource for enhancing vision and language models' capabilities in interpreting complex visual scenarios.
-         </p>
+<p>VCQA is a benchmark for evaluating vision-and-language models on visual commonsense reasoning. Instead of answering with text, models must identify a bounding box that visually supports the correct answer to a free-form question grounded in a synthetic image. This setup directly tests the model’s visual inference capabilities while minimizing reliance on language generation. We evaluate both human and model performance on this task and propose metrics that combine IoU with manual correctness ratings.</p>
 </h3>
 </div>
 <div class="item">
@@ -225,15 +218,7 @@
            Data Collection
            </h2>
 <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-<p>
-         The Visual Riddles Challenge tests vision-and-language models using visual riddles that incorporate common-sense reasoning with culturally rich and ambiguous scenarios.
-           Each riddle features a synthetic image created by experienced designers using advanced text-to-image models like DALLE-3, Gemini-1.5 and Stable-Diffusion.
-           These images, designed to include subtle visual clues and cultural nuances, challenge the models to integrate commonsense and world knowledge for solving.
-           Designers provide hints to guide the interpretation of visual clues and attributions for riddles requiring specific knowledge. After rigorous peer review to ensure clarity and solvability,
-           each riddle is finalized with a detailed answer explaining the solution logically based on the visual clues. The dataset aims to advance the capabilities of AI models in interpreting complex visual information.
-           <br/><br/>
-<img alt="MY ALT TEXT" src="static/images/VR-Challenge_fig1.jpg">
-</img></p>
+<p>The dataset is built using questions from the CommonsenseQA benchmark. Each question is transformed into a visual scenario using a language model that generates scene descriptions for image synthesis. These prompts are refined by humans to ensure solvability and are categorized into commonsense types. Each example includes a free-form question and a ground-truth bounding box indicating the correct answer region.</p>
 </h3>
 </div>
 <div class="item">
@@ -248,8 +233,8 @@
            For example, hints like 'Look at the colors of the fur' guide models to accurately infer a cat’s gender, leveraging knowledge that calico cats are predominantly female.
            These tasks are designed to enhance model capabilities in integrating visual data with commonsense reasoning and detailed justifications, supporting scalable and automated evaluations.
            <br/><br/>
-<img alt="MY ALT TEXT" src="static/images/VR_Tasks.jpg">
-</img></p>
+<img alt="MY ALT TEXT" src="static/images/VR_Tasks.jpg"/>
+</p>
 </h3>
 </div>
 <div class="item">
@@ -263,8 +248,8 @@
           Models like Gemini-Pro-1.5 showed a performance of 40%, with humans achieving 82%. Even with auxiliary data such as human-generated captions, model performance improved only marginally.
            This task tests models' ability to generate correct answers from visual cues alone.
          <br/><br/>
-<img alt="MY ALT TEXT" src="static/images/table1.jpg">
-</img></p>
+<img alt="MY ALT TEXT" src="static/images/table1.jpg"/>
+</p>
 </h3>
 </div>
 <div class="item">
