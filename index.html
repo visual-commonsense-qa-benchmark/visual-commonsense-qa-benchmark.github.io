@@ -1,105 +1,64 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Visual Riddles">
-  <meta property="og:title" content="Visual Riddles Benchmark"/>
-  <meta property="og:description" content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models"/>
-  <meta property="og:url" content="https://visual-riddles.github.io/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="Visual Riddles Benchmark">
-  <meta name="twitter:description" content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/nitzangu_Albert_Einstein_holds_an_iphone_realistic_style_ba15ea7b-b829-478b-adef-b474ccf01a2a.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Vision-and-Language Benchmark, Synthetic and Compositional Images">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Visual Riddles Benchmark </title>
-  <link rel="icon" type="image/x-icon" href="static/images/vr_icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
+<meta charset="utf-8"/>
+<!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+<!-- Replace the content tag with appropriate information -->
+<meta content="VCQA: A Visual Commonsense Benchmark" name="description"/>
+<meta content="VCQA Benchmark" property="og:title">
+<meta content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models" property="og:description">
+<meta content="https://visual-riddles.github.io/" property="og:url"/>
+<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+<meta content="static/image/your_banner_image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="VCQA Benchmark" name="twitter:title"/>
+<meta content="Visual Commonsense Question Answering Benchmark for Vision-Language Models" name="twitter:description"/>
+<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+<meta content="static/images/nitzangu_Albert_Einstein_holds_an_iphone_realistic_style_ba15ea7b-b829-478b-adef-b474ccf01a2a.png" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- Keywords for your paper to be indexed by-->
+<meta content="Vision-and-Language Benchmark, Synthetic and Compositional Images" name="keywords"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>VCQA: Visual Commonsense Question Answering Benchmark</title>
+<link href="static/images/vr_icon.png" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"/>
+<link href="static/css/bulma.min.css" rel="stylesheet"/>
+<link href="static/css/bulma-carousel.min.css" rel="stylesheet"/>
+<link href="static/css/bulma-slider.min.css" rel="stylesheet"/>
+<link href="static/css/fontawesome.all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet"/>
+<link href="static/css/index.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script defer="" src="static/js/fontawesome.all.min.js"></script>
+<script src="static/js/bulma-carousel.min.js"></script>
+<script src="static/js/bulma-slider.min.js"></script>
+<script src="static/js/index.js"></script>
+</meta></meta></head>
 <body>
-
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">-->
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Visual Riddles<img src="static/images/vr_icon.png" alt="visual_riddles" style="width: 6%; height: 6%">: a Commonsense and <br> World Knowledge Challenge
-                for <br> Large Vision and Language Models</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/nitzan-guetta-34a0021b5/" target="_blank">Nitzan Guetta Bitton</a>,&nbsp;</span>
-                  <span class="author-block">
-                    <a href="https://lovodkin93.github.io/" target="_blank">Aviv Slobodkin</a>,&nbsp;</span>
-                    <span class="author-block">
-                      <a href="https://il.linkedin.com/in/aviya-maimon" target="_blank">Aviya Maimon</a>,&nbsp;</span>
-                      <span class="author-block">
-                          <a href="https://il.linkedin.com/in/eliya-habba-39195316a" target="_blank">Eliya Habba</a>,&nbsp;</span><br>
-                          <span class="author-block">
-                            <a href="https://royi-rassin.netlify.app/" target="_blank">Royi Rassin</a>,&nbsp;</span>
-                <span class="author-block">
-                  <a href="https://yonatanbitton.github.io/" target="_blank">Yonatan Bitton</a>,&nbsp;</span>
-                <span class="author-block">
-                <a href="https://research.google/people/idan-szpektor/?&type=google" target="_blank">Idan Szpektor</a>,&nbsp;</span>
-                <span class="author-block">
-                <a href="https://cs3801.wixsite.com/amirgloberson" target="_blank">Amir Globerson</a>,&nbsp;</span>
-                <span class="author-block">
-                <a href="https://cyber.bgu.ac.il/yuval/" target="_blank">Yuval Elovici</a>,&nbsp;</span>
-
-
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Ben Gurion University of the Negev,&nbsp;&nbsp;</span>
-                      <span class="author-block">Bar-Ilan University,</span><br>
-                    <span class="author-block">The Hebrew University of Jerusalem,</span>
-                    <span class="author-block">Google Research,&nbsp;&nbsp;</span>
-                    <span class="author-block">Tel Aviv University</span>
+<section class="hero">
+<div class="hero-body">
+<div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column has-text-centered">
+<h1 class="title is-1 publication-title">VCQA: A Visual Feedback Benchmark for Commonsense Reasoning</h1>
+<div class="is-size-5 publication-authors"><span class="author-block">Nitzan Guetta, Noam Tarshish, Nofar Selouk, Eliya Aharon</span><br/><span class="author-block">Ben-Gurion University of the Negev</span></div>
+<div class="is-size-5 publication-authors">
 <!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span><br>-->
-                     <br>
-                   <span class="author-block">
-                           <b>
-                               <img src="static/images/NeurIPS_logo.png"  style="width: 22%; height: 20%" class="image-spacing"/>
-                           </b>
-
+<br/>
+<span class="author-block">
+<b>
+</b>
 <!--                            <small>-->
 <!--                                <img src="static/images/NeurIPS 2023 logo.png"  style="width: 20%; height: 20%"/>-->
 <!--                            </small>-->
-
-                   </span>
-                 <br>
-                  </div>
-              <br>
+</span>
+<br/>
+</div>
+<br/>
 <!--                  &lt;!&ndash; Github link &ndash;&gt;-->
 <!--                  <span class="link-block">-->
 <!--                    <a href="https://github.com/YOUR REPO HERE" target="_blank"-->
@@ -110,18 +69,15 @@
 <!--                    <span>Code</span>-->
 <!--                  </a>-->
 <!--                </span>-->
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2407.19474" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-
+<!-- ArXiv abstract Link -->
+<span class="link-block">
+<a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/2407.19474" target="_blank">
+<span class="icon">
+<i class="ai ai-arxiv"></i>
+</span>
+<span>arXiv</span>
+</a>
+</span>
 <!--            <span class="link-block">-->
 <!--                  <a href="https://medium.com/@nitzanguetta/introducing-whoops-a-benchmark-of-commonsense-defying-synthetically-generated-images-6748268458e8" target="_blank"-->
 <!--                  class="external-link button is-normal is-rounded is-dark">-->
@@ -131,38 +87,31 @@
 <!--                  <span>Medium</span>-->
 <!--                </a>-->
 <!--              </span>-->
-
-                <!-- HuggingFace Link -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/visual-riddles/visual_riddles" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <p style="font-size:20px">&#x1F917;</p>
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
-
-              <span class="link-block">
-                  <a href="https://huggingface.co/spaces/visual-riddles/visual-riddles" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <p style="font-size:20px">&#x1F917;</p>
-                  </span>
-                  <span>Explorer</span>
-                </a>
-              </span>
-
-              <span class="link-block">
-                  <a href="https://colab.research.google.com/drive/1E3Kpc9xFkD97CEobN79C9jdLJNIcbz0s?usp=sharing" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fa fa-code"></i>
-                  </span>
-                  <span>Evaluation Notebook</span>
-                </a>
-              </span>
-
+<!-- HuggingFace Link -->
+<span class="link-block">
+<a class="external-link button is-normal is-rounded is-dark" href="https://huggingface.co/datasets/visual-riddles/visual_riddles" target="_blank">
+<span class="icon">
+<p style="font-size:20px">🤗</p>
+</span>
+<span>Dataset</span>
+</a>
+</span>
+<span class="link-block">
+<a class="external-link button is-normal is-rounded is-dark" href="https://huggingface.co/spaces/visual-riddles/visual-riddles" target="_blank">
+<span class="icon">
+<p style="font-size:20px">🤗</p>
+</span>
+<span>Explorer</span>
+</a>
+</span>
+<span class="link-block">
+<a class="external-link button is-normal is-rounded is-dark" href="https://colab.research.google.com/drive/1E3Kpc9xFkD97CEobN79C9jdLJNIcbz0s?usp=sharing" target="_blank">
+<span class="icon">
+<i class="fa fa-code"></i>
+</span>
+<span>Evaluation Notebook</span>
+</a>
+</span>
 <!--              <span class="link-block">-->
 <!--                  <a href="https://colab.research.google.com/drive/1yphyMKFFrK7TrNVhbVIlzkYfs77mZBxi?usp=sharing" target="_blank"-->
 <!--                  class="external-link button is-normal is-rounded is-dark">-->
@@ -172,7 +121,6 @@
 <!--                  <span>Explanation of Violation Evaluation</span>-->
 <!--                </a>-->
 <!--              </span>-->
-
 <!--              <span class="link-block">-->
 <!--                <a href="static/pdfs/WHOOPS-iccv-poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">-->
 <!--                  <span class="icon">-->
@@ -181,7 +129,6 @@
 <!--                  <span>ICCV poster</span>-->
 <!--                </a>-->
 <!--              </span>-->
-
 <!--              <span class="link-block">-->
 <!--                <a href="static/pdfs/whoops!_neurips_poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">-->
 <!--                  <span class="icon">-->
@@ -190,177 +137,163 @@
 <!--                  <span>NeurIPS poster</span>-->
 <!--                </a>-->
 <!--              </span>-->
+</div>
+</div>
+</div>
+</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </section>
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="publication-flipped">
+<div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">
+<div class="publication-flipped">
 <!--        <h2 class="title is-3">What makes these images weird?</h2>-->
-        <div class="content has-text-justified">
+<div class="content has-text-justified">
 <!--            CLICK TO GET AN ANSWER!-->
 <!--        <div class="flip-box-container">-->
 <!--            <div class="flip-box">-->
 <!--        <h2 class="title is-3">What makes these images weird?</h2>-->
 <!--            </div>-->
 <!--        </div>-->
-        <div class="flip-box-container">
-          <div class="flip-box">
-              <center><h4><br>Why is he doing this?<br><br></h4></center>
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img src="static/images/mosquito.png" alt="Paris" style="width:300px;height:300px">
-              </div>
-              <div class="flip-box-back">
-                <h2><br><br>Look at the nightstand</h2>
-                <p class="has-text-weight-bold">The image depicts a man scratching his arm, in a bedroom and a mosquito on a nightstand near the bed. Therefore, the man probably scratching his arm due to mosquito bite.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box">
-              <center><h4><br>What is this local doing?<br><br></h4></center>
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img src="static/images/italian.jpg" alt="Paris" style="width:300px;height:300px">
-              </div>
-              <div class="flip-box-back">
-                <h2><br>Look at his cheek</h2>
-                <p class="has-text-weight-bold">This local is most likely Italian, based on the colosseum in the background. He appears to be eating and pushing his finger to his cheek. In Italy, while eating, this gesture usually means “buono” - that you find the food tasty. Therefore, he is most likely saying that the food is delicious.</p>
-              </div>
-            </div>
-          </div>
-
-         <div class="flip-box">
-             <center><h4>Sara is a resort owner in Krabi, Thailand. could this be her resort?</h4></center>
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img src="static/images/krabi.png" alt="Paris" style="width:300px;height:300px">
-              </div>
-              <div class="flip-box-back">
-                <h2><br>Look on the mountains</h2>
-                <p class="has-text-weight-bold">An outside image of a thai-style house, with big yard. in the yard there is grass and big pool. on the far background there are Alpine mountains with snow on the tops. there is visible snow on the mountains tops.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+<div class="flip-box-container">
+<div class="flip-box">
+<center><h4><br/>Why is he doing this?<br/><br/></h4></center>
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img alt="Paris" src="static/images/mosquito.png" style="width:300px;height:300px"/>
+</div>
+<div class="flip-box-back">
+<h2><br/><br/>Look at the nightstand</h2>
+<p class="has-text-weight-bold">The image depicts a man scratching his arm, in a bedroom and a mosquito on a nightstand near the bed. Therefore, the man probably scratching his arm due to mosquito bite.</p>
+</div>
+</div>
+</div>
+<div class="flip-box">
+<center><h4><br/>What is this local doing?<br/><br/></h4></center>
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img alt="Paris" src="static/images/italian.jpg" style="width:300px;height:300px"/>
+</div>
+<div class="flip-box-back">
+<h2><br/>Look at his cheek</h2>
+<p class="has-text-weight-bold">This local is most likely Italian, based on the colosseum in the background. He appears to be eating and pushing his finger to his cheek. In Italy, while eating, this gesture usually means “buono” - that you find the food tasty. Therefore, he is most likely saying that the food is delicious.</p>
+</div>
+</div>
+</div>
+<div class="flip-box">
+<center><h4>Sara is a resort owner in Krabi, Thailand. could this be her resort?</h4></center>
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img alt="Paris" src="static/images/krabi.png" style="width:300px;height:300px"/>
+</div>
+<div class="flip-box-back">
+<h2><br/>Look on the mountains</h2>
+<p class="has-text-weight-bold">An outside image of a thai-style house, with big yard. in the yard there is grass and big pool. on the far background there are Alpine mountains with snow on the tops. there is visible snow on the mountains tops.</p>
+</div>
+</div>
+</div>
+</div>
 <!--        </p>-->
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <!-- End paper abstract -->
-
-
-
 <!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+<div class="hero-body">
+<div class="container">
+<div class="carousel results-carousel" id="results-carousel">
+<div class="item">
+<h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
            Abstract
            </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left has-background-info-light pr-4 pl-4 pt-3 pb-3">
-         <p>
+<h3 class="subtitle is-size-4-tablet has-text-left has-background-info-light pr-4 pl-4 pt-3 pb-3">
+<p>
              Imagine observing someone scratching their arm; to understand why, additional context would be necessary. However, spotting a mosquito nearby would immediately offer a likely explanation for the person's discomfort, thereby alleviating the need for further information. This example illustrates how subtle visual cues can challenge our cognitive skills and demonstrates the complexity of interpreting visual scenarios.
              To study these skills, we present Visual Riddles, a benchmark aimed to test vision and language models on visual riddles requiring commonsense and world knowledge.
              The benchmark comprises 400 visual riddles, each featuring a unique image created by a variety of text-to-image models, question, ground-truth answer, textual hint, and attribution.
              Human evaluation reveals that existing models lag significantly behind human performance, which is at 82% accuracy, with Gemini-Pro-1.5 leading with 40% accuracy. Our benchmark comes with automatic evaluation tasks to make assessment scalable. These findings underscore the potential of Visual Riddles as a valuable resource for enhancing vision and language models' capabilities in interpreting complex visual scenarios.
          </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+</h3>
+</div>
+<div class="item">
+<h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
            Data Collection
            </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
+<h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+<p>
          The Visual Riddles Challenge tests vision-and-language models using visual riddles that incorporate common-sense reasoning with culturally rich and ambiguous scenarios.
            Each riddle features a synthetic image created by experienced designers using advanced text-to-image models like DALLE-3, Gemini-1.5 and Stable-Diffusion.
            These images, designed to include subtle visual clues and cultural nuances, challenge the models to integrate commonsense and world knowledge for solving.
            Designers provide hints to guide the interpretation of visual clues and attributions for riddles requiring specific knowledge. After rigorous peer review to ensure clarity and solvability,
            each riddle is finalized with a detailed answer explaining the solution logically based on the visual clues. The dataset aims to advance the capabilities of AI models in interpreting complex visual information.
-           <br><br>
-           <img src="static/images/VR-Challenge_fig1.jpg"  alt="MY ALT TEXT"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           <br/><br/>
+<img alt="MY ALT TEXT" src="static/images/VR-Challenge_fig1.jpg">
+</img></p>
+</h3>
+</div>
+<div class="item">
+<h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
            Visual Riddles Benchmark
            </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
+<h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+<p>
          This study introduces three critical tasks within the Visual Riddles benchmark to evaluate vision-and-language models:
            solving open-ended visual riddles, selecting the correct answer from multiple options, and assessing open-ended responses both with and without reference answers.
            We also incorporate auxiliary information, such as textual hints and attributions, to enhance model accuracy.
            For example, hints like 'Look at the colors of the fur' guide models to accurately infer a cat’s gender, leveraging knowledge that calico cats are predominantly female.
            These tasks are designed to enhance model capabilities in integrating visual data with commonsense reasoning and detailed justifications, supporting scalable and automated evaluations.
-           <br><br>
-           <img src="static/images/VR_Tasks.jpg"  alt="MY ALT TEXT"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           <br/><br/>
+<img alt="MY ALT TEXT" src="static/images/VR_Tasks.jpg">
+</img></p>
+</h3>
+</div>
+<div class="item">
+<h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
            Experiments - Open-ended VQA
            </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
+<h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+<p>
          Our experiments evaluated several leading vision-and-language models, including LLaVA, Gemini-Pro,
            InstructBLIP, and GPT-4, on various tasks within our benchmark.
           Models like Gemini-Pro-1.5 showed a performance of 40%, with humans achieving 82%. Even with auxiliary data such as human-generated captions, model performance improved only marginally.
            This task tests models' ability to generate correct answers from visual cues alone.
-         <br><br>
-           <img src="static/images/table1.jpg"  alt="MY ALT TEXT"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+         <br/><br/>
+<img alt="MY ALT TEXT" src="static/images/table1.jpg">
+</img></p>
+</h3>
+</div>
+<div class="item">
+<h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
            Experiments - Multiple-choice VQA
            </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
+<h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+<p>
          This task shifts from generative to classification-based evaluation.
            GPT-4 and Gemini-Pro-Vision showed the highest accuracies, with slight improvements over open-ended tasks.
            Models perform better with hints, demonstrating the importance of auxiliary information in enhancing accuracy.
-         <br><br>
-           <img src="static/images/table2.jpg"  alt="MY ALT TEXT"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+         <br/><br/>
+<img alt="MY ALT TEXT" src="static/images/table2.jpg"/>
+</p>
+</h3>
+</div>
+<div class="item">
+<h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
            Experiments - Automatic Evaluation
            </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
+<h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+<p>
          Gemini-Pro-1.5, identified as the best auto-rater, scored higher in evaluations that used reference-based scenarios.
            It demonstrated that models generally perform better with hints but struggle with attributions, highlighting ongoing challenges in model reasoning with auxiliary data.
-         <br><br>
-           <img src="static/images/table34.jpg"  alt="MY ALT TEXT"/>
-         </p>
-         </h3>
-      </div>
-
+         <br/><br/>
+<img alt="MY ALT TEXT" src="static/images/table34.jpg"/>
+</p>
+</h3>
+</div>
 <!--      <div class="item">-->
 <!--         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
 <!--           Using Weird Images to Create V&L Tasks-->
@@ -379,7 +312,6 @@
 <!--         </p>-->
 <!--         </h3>-->
 <!--      </div>-->
-
 <!--      <div class="item">-->
 <!--         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
 <!--           Test Results for Explanation-of-violation-->
@@ -392,7 +324,6 @@
 <!--         </p>-->
 <!--         </h3>-->
 <!--      </div>-->
-
 <!--      <div class="item">-->
 <!--        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
 <!--           Test Results for Image Captioning, Cross-Modal Matching and Visual Question Answering-->
@@ -406,31 +337,26 @@
 <!--         </p>-->
 <!--         </h3>-->
 <!--      </div>-->
-  </div>
+</div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.37.2/gradio.js"></script>
-
+<script src="https://gradio.s3-us-west-2.amazonaws.com/4.37.2/gradio.js" type="module"></script>
 <!-- explorer video -->
 <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <div class="columns is-centered has-text-centered">
-          <div class="publication-video">
-            <gradio-app src="https://visual-riddles-visual-riddles.hf.space"></gradio-app>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="hero-body">
+<div class="container">
+<!-- Paper video. -->
+<div class="columns is-centered has-text-centered">
+<div class="publication-video">
+<gradio-app src="https://visual-riddles-visual-riddles.hf.space"></gradio-app>
+</div>
+</div>
+</div>
+</div>
 </section>
 <!-- End explorer -->
-
 <!-- Youtube video -->
 <!--<section class="hero is-small">-->
 <!--  <div class="hero-body">-->
@@ -446,8 +372,6 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--</section>-->
-
-
 <!-- Paper poster -->
 <!--<section class="hero is-small is-light">-->
 <!--  <div class="hero-body">-->
@@ -455,12 +379,11 @@
 <!--      <h2 class="title">Paper</h2>-->
 <!--      <iframe  src="static/pdfs/WHOOPS_paper.pdf" width="100%" height="550">-->
 <!--          </iframe>-->
-<!--        -->
+<!-- -->
 <!--      </div>-->
 <!--    </div>-->
 <!--  </section>-->
 <!--End paper poster -->
-
 <!-- Youtube video -->
 <!--<section class="hero is-small">-->
 <!--    <div class="hero-body">-->
@@ -474,7 +397,6 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--</section>-->
-
 <!--<section class="hero is-small is-light">-->
 <!--  <div class="hero-body">-->
 <!--    <div class="container">-->
@@ -518,70 +440,54 @@
 <!--</div>-->
 <!--</section>-->
 <!-- End image carousel -->
-
-
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"
-></script>
+<script src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js" type="module"></script>
 <section class="hero is-small">
-  <div class="hero-body">
-   <div class="container">
+<div class="hero-body">
+<div class="container">
 <!--      &lt;!&ndash; Paper video. &ndash;&gt; -->
-     <div class="columns is-centered has-text-centered">
-         <div class="publication-video">
-            <gradio-app src="https://visual-riddles-visual-riddles-leaderboard.hf.space"></gradio-app> 
-         </div>
-       </div>
-     </div>
-   </div>
+<div class="columns is-centered has-text-centered">
+<div class="publication-video">
+<gradio-app src="https://visual-riddles-visual-riddles-leaderboard.hf.space"></gradio-app>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
 <!--BibTex citation -->
 <section class="hero is-small is-light">
-  <div class="hero-body">
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{bittonguetta2024visualriddlescommonsenseworld,
-      title={Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models},
-      author={Nitzan Bitton-Guetta and Aviv Slobodkin and Aviya Maimon and Eliya Habba and Royi Rassin and Yonatan Bitton and Idan Szpektor and Amir Globerson and Yuval Elovici},
-      year={2024},
-      eprint={2407.19474},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.19474},
+<div class="hero-body">
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+<h2 class="title">BibTeX</h2>
+<pre><code>@misc{2025vcqa,
+  title={VCQA: A Visual-Feedback Question Answering Benchmark for Commonsense Reasoning},
+  author={Nitzan Guetta and Noam Tarshish and Nofar Selouk and Eliya Aharon},
+  year={2025},
+  institution={Ben-Gurion University of the Negev},
+  note={Preprint}
 }</code></pre>
-    </div>
+</div>
 </section>
-    </div>
+</div>
 </section>
 <!--End BibTex citation -->
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p style="color:gray;font-size:9.9px;">
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+<footer class="footer">
+<div class="container">
+<div class="columns is-centered">
+<div class="column is-8">
+<div class="content">
+<p style="color:gray;font-size:9.9px;">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
             <a href="https://www.flaticon.com/free-icons/magic" title="magic icons">Magic icons created by Freepik - Flaticon</a>
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
+</p>
+</div>
+</div>
+</div>
+</div>
 </footer>
-
 <!-- Statcounter tracking code -->
-  
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-  </body>
-  </html>
+<!-- End of Statcounter Code -->
+</body>
+</html>
