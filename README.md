@@ -1,1 +1,1 @@
-# visual-riddles.github.io
+# visual-commonsense-qa-benchmark.github.io
